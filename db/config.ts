@@ -1,6 +1,16 @@
-import { defineDb } from 'astro:db';
+import { defineDb } from "astro:db";
+import {
+  FactTopics,
+  Facts,
+  FactRequests,
+  UserFactState,
+} from "./tables";
 
-// https://astro.build/db/config
 export default defineDb({
-  tables: {}
+  tables: {
+    FactTopics,
+    Facts,
+    FactRequests,
+    UserFactState,
+  },
 });
